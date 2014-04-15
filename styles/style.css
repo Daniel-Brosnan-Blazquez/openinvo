@@ -1,0 +1,188 @@
+
+.container { 
+  width: 100%;
+  border: 0px solid #cc0000;
+   position: absolute; left: 0%; top: 0%; z-index: 1; 
+margin-left:0%;
+  background-color: bcbaff;
+  padding: 2%;
+}
+
+.header { 
+  width: 96%;
+  height: 38px;
+  border: 1px solid #cc0000;
+  position: relative; left: 0%; top: 5%; z-index: 1;
+  padding-top: 12px;
+  text-align:center;
+}
+
+.clock { 
+  width: 70px;
+  border: 1px solid #cc0000;
+  position: relative; left: 88%; top: 3%; z-index: 1;
+  font-size: small;
+  font-weight: bold;
+  font-family: FreeSans, Arial, Helvetica;
+  background: black;
+  color: lightgreen;
+  margin-bottom: 10px;
+
+ }
+
+.data { 
+ width: 96%;
+  border: 1px solid #cc0000;
+  position: relative; left: 0%; top: 7%; z-index: 1;
+  margin-top: 10px;
+ }
+
+.caja-menu { 
+ width: 97%;
+  height: 25px;
+  border: 1px solid #cc0000;
+  position: relative; left: 1.5%; top: 6%; z-index: 1;
+  margin-top: 9px;
+  text-align: center; 
+ }
+
+.caja-com { 
+ width: 97%;
+  border: 1px solid #cc0000;
+  position: relative; left: 1.5%; top: 10%; z-index: 1;
+  margin-top: 8px; 
+  text-align:center;
+}
+
+.back-init { 
+  width: 240px;
+  height: 25px;
+  border: 0px solid #cc0000;
+   position: relative; left: 50%; top: 12%; z-index: 1; 
+  margin-left: -120px;
+}
+
+.caja-login { 
+  width: 280px;
+  border: 0px solid #cc0000;
+   position: relative; left: 50%; top:10%; z-index: 1; 
+  margin-left:-140px;        
+}
+
+.caja-new-login { 
+  width: 90%;
+  border: 0px solid #cc0000;
+   position: relative; left: 5%; top:10%; z-index: 1;        
+}
+
+.caja-nueva-factura { 
+  width: 100%;
+  border: 0px solid #cc0000;
+   position: relative; left: 0%; top:10%; z-index: 1; 
+}
+
+.caja-rel { 
+  width: 360px;
+  border: 0px solid #cc0000;
+  position: relative; left: 50%; top:10%; z-index: 1; 
+  margin-left:-160px;
+  margin-top: 10px;
+}
+
+.caja-login-edit { 
+  width: 100%;
+  border: 0px solid #cc0000;
+   position: relative; left: 0%; top:10%; z-index: 1; 
+}
+
+.caja-titulo { 
+  width: 80%;
+  border: 0px solid #cc0000;
+   position: relative; left: 10%; top:7%; z-index: 1;   
+  text-align: center;
+  margin-top: 8px;
+}
+
+.menu { 
+  list-style: none; 
+  padding: 3px;
+  margin: 0px;  
+}
+
+.menu li { 
+  display: inline;
+ }
+    
+table.item-list { 
+  width: 100%;
+ }
+
+.table-header { 
+  background: #838383;
+  color: white;
+  text-align: center;
+  
+ }
+
+.fila-impar { 
+  background: #fdecb3;
+  
+ }
+
+.total { 
+  background: #a5ff07;
+  
+ }
+
+.colum_der { 
+  text-align:center;
+  
+ }
+
+.colum_pendiente { 
+  text-align:center;
+  color : red;
+ }
+
+.colum_pagado { 
+  text-align:center;
+  color : green;
+ }
+
+div li a{ 
+background-color: f1ccb1;
+
+ }
+
+p { 
+ font-size: 1em;
+ color: green;
+ }
+
+pre span{ 
+      color: red;
+}
+
+.normal { 
+ width: 700px;
+ border: 1px solid #cc0000;
+ position: relative; left: 50%; top: 10%; z-index: 1;
+ margin-left:-350px; 
+}
+
+.normal-iz { 
+ width: 300px;
+ border: 1px solid #cc0000;
+ position: relative; z-index: 1;
+ margin-top: 10px;
+ margin-left: 10px;
+ text-align: center;
+ }
+.normal-der { 
+ width: 300px;
+ border: 1px solid #cc0000;
+ position: relative; left: 100%; z-index: 1;
+ margin-left: -310px;
+ margin-top: 10px;
+ text-align: center;
+ }
