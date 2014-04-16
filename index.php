@@ -1,3 +1,14 @@
+<?php
+
+/* include modules */
+include ("lib/common.php");        /* Common operations */
+include ("lib/dbconn.php");        /* Data base operations */
+include ("src/clients.php");       // Client operations */
+include ("src/invoices.php");
+/* include ("presupuestos.php");*/
+/* include ("logs.php"); */
+
+?>
 
 <html>
 
@@ -26,14 +37,39 @@
     <!--Header menu-->
     <div class="header">    
       <ul class="menu">
-	<li><a href="facturacion.php?module=cliente&action=list">Clientes</a></li>
-	<li><a href="facturacion.php?module=factura&action=list">Facturas</a></li>
-	<li><a href="facturacion.php?module=presupuesto&action=list">Presupuestos</a></li>
+	<li><a href="index.php?module=client&action=list">Clientes</a></li>
+	<li><a href="index.php?module=invoice&action=list">Facturas</a></li>
+	<li><a href="index.php?module=budget&action=list">Presupuestos</a></li>
       </ul> 
     </div>
 
     <!--Data-->
     <div class="data">
+
+<?php
+$module = get_value ("module");
+$action = get_value ("action");
+
+switch ($module) {
+
+case "invoice":
+	/* Call to the proper invoices operation */
+	invoices_operation ($action);
+	break;
+
+case "budget":
+	/* Call to the proper budgets operation */
+	operacion_presupuesto ($action);
+	break;
+
+default:
+	/* Call to the proper clients operation */
+	clients_operation ($action);
+	break;
+}
+
+?>
+
     </div>
 
     <!--Botton to go to init page-->
@@ -47,4 +83,3 @@
 </body>
 
 </html>
-

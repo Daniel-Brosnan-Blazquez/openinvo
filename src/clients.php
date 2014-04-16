@@ -1,10 +1,13 @@
 /* TODO:
-Put url to budgets and invoices related to clients
+- Make posible to download budgets and invoices related to clients
+- Build tests
+- Translate variables to english
+- Set a dictionary for the words shown in the web page in different lenguages
 */
 
 <?
 
-function show_list_clients ($query) {
+function show_clients ($query) {
     echo "<table class='item-list'>\n";
     echo "<tr class='table-header'><td>Cliente</td><td>Acciones</td></tr>";
     $even = 0;
@@ -32,7 +35,7 @@ function list_clients () {
     $query = do_query ("SELECT nombre, id, CHAR_LENGTH(nombre) from clientes ORDER BY nombre", $link);
 
     /* Show results */
-    show_list_clients ($query);
+    show_clients ($query);
 
     /* Close connection */
     close_conn ($link);
